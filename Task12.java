@@ -5,8 +5,8 @@ public class Task12 {
 //od 6.014 sa odstupanjem od ±0.05%.
 
 	public static void main(String[] args) {
-		double diameter = 2.395829;
-		double radius = diameter / 2;
+	
+		double radius = 1.2;
 		double pi = 3.14;
 		double volume = (4 * radius * radius * radius * pi) / 3;
 		double volumeStandard = 6.014;
@@ -15,9 +15,9 @@ public class Task12 {
 		double volumeLowerLimit = volumeStandard - (volumeStandard * 0.05) / 100;
 		
 		if (volume >= volumeLowerLimit && volume <= volumeUpperLimit ) {
-			System.out.println("Dati poluprecnik " + diameter + " je dobre kvalitete.");	
+			System.out.println("Dati poluprecnik " + radius + " je dobre kvalitete.");	
 		} else {
-			System.out.println("Dati poluprecnik " + diameter + " je lose kvalitete.");
+			System.out.println("Dati poluprecnik " + radius + " je lose kvalitete.");
 			
 		}
 	}
